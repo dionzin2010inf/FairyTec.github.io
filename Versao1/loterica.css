@@ -1,0 +1,91 @@
+body{
+    background-image: url("FairyTecMenu.png");
+    background-repeat: no-repeat;
+}
+
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+fieldset{
+    background-color: rgba(255,255,255,0.2);
+    border: 2px solid black;
+    border-radius: 15px;
+    color: black;
+    backdrop-filter: blur(2px);
+}
+
+#formulario fieldset{
+    position: absolute;
+    top: 270px;
+    left: 40px;
+    width: 500px;
+    height: 320px;
+    text-align: center;
+}
+
+#fila_espera{
+    position: absolute;
+    width: 500px;
+    height: 320px;
+    top: 270px;
+    right: 40px;
+}
+
+#resultado_espera{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Lobster", sans-serif;
+}
+
+#btn_atender{
+    position: absolute;
+    top: 390px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 45px;
+    border: solid black;
+    border-radius: 15px;
+    background: linear-gradient(90deg, #ff66cc, #b266ff);
+    color: white;
+    font-size: 18px;
+    font-family: "Lobster", sans-serif;
+}
+
+.caixa_entrada{
+    width: 95%;
+    height: 30px;
+    border-radius: 10px;
+    border: solid black;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+label{
+    font-size: 25px;
+    font-family: "Lobster", sans-serif;
+}
+
+label[for="Normal"],
+label[for="Prioridade"]{
+    display: inline-block;
+    margin-top: 30px;
+}
+
+#btn_consultar{
+    margin-top: 25px;
+    border: solid black;
+    border-radius: 10px;
+    height: 60px;
+    width: 120px;
+    font-family: "Lobster", sans-serif;
+}
+
+legend{
+    font-size: 22px;
+    font-family: "Lobster", sans-serif;
+}

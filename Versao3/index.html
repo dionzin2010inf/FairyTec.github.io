@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotérica Magic Fairy</title>
+    <link rel="stylesheet" href="loterica.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="musica" src="MythixWinx.mp3" loop></audio>
+    <form id="formulario">
+        <fieldset>
+            <legend>Fila da FairyTec</legend>
+
+            <label for="nome">Nome:
+                <input
+                type="text"
+                placeholder="Informe o seu nome"
+                id="nome"
+                class="caixa_entrada"
+                required
+                >
+            </label>
+
+             <label for="Normal">
+                    <input 
+                        type="radio"
+                        name="radio_s"
+                        id="normal"
+                        value="normal"
+                        required
+                        >Normal
+                        
+            </label>
+
+            <label for="Prioridade">
+                    <input 
+                        type="radio"
+                        name="radio_s"
+                        id="prioridade"
+                        value="prioridade"
+                        required
+                        >Prioridade
+                        
+            </label>
+
+            </br>
+
+            <button type="submit" id="btn_consultar">Cadastrar</button>
+            <input type="button" id="btn_consultar" onclick="listar()" value="Consultar">
+
+        </fieldset>
+    </form>
+
+    <div>
+        <fieldset id="fila_espera">
+            <legend>Fila De Espera</legend>
+
+            <div id="resultado_espera"></div>
+
+        </fieldset>
+    </div>
+
+    <div>
+        <br/>
+            <input type="button" id="btn_atender" onclick="atender()" value="atendimento">
+    </div>
+ 
+    <script src="tec.js"></script>
+</body>
+</html>
